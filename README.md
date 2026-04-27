@@ -35,3 +35,55 @@ Ensure the data is displayed meaningfully wherever required.
 Add comments in the code to explain:
 • How request handling flows through the application
 • How different request types are handled differently
+
+
+
+--->  this is the complete folder structure :
+
+D:.student_registration_management_system
+│   db.sqlite3
+│   manage.py
+│   README.md
+│
+├───students
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   tests.py
+│   │   urls.py
+│   │   views.py
+│   │   __init__.py
+│   │
+│   ├───migrations
+│   │   │   0001_initial.py
+│   │   │   __init__.py
+│   │   │
+│   │   └───__pycache__
+│   │           0001_initial.cpython-313.pyc
+│   │           __init__.cpython-313.pyc
+│   │
+│   └───__pycache__
+│           admin.cpython-313.pyc
+│           apps.cpython-313.pyc
+│           models.cpython-313.pyc
+│           urls.cpython-313.pyc
+│           views.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│
+├───student_registration_management_system
+│   │   asgi.py
+│   │   settings.py
+│   │   urls.py
+│   │   wsgi.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           settings.cpython-313.pyc
+│           urls.cpython-313.pyc
+│           wsgi.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│
+└───templates
+        add_student.html
+        base.html
+        view_students.html
