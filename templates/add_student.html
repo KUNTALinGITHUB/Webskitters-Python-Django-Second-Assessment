@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-4 text-center">
+  <h2>Add Student</h2>
+<div>
+    <br>
+<div class="container mt-4 text-start">  
+  <form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="exampleInputname" class="form-label">Name:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputname"
+        name="name"
+        placeholder="Kuntal Pal"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputemail" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="exampleInputemail"  name="email" placeholder="kuntal.pal7550@gmail.com" required/>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputcourse" class="form-label">Course:</label>
+      <input type="text" class="form-control" id="exampleInputcourse"  name="course"
+      placeholder="Python course"
+      required/>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputmarks" class="form-label">Marks:</label>
+      <input type="number" class="form-control" id="exampleInputmarks"  name="marks"
+      placeholder="90"
+      required/>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Add Student</button>
+    
+
+  </form>
+</div>
+
+
+{% endblock %}
